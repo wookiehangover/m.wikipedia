@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "version": "1.0.0",
+  "description": "Makes the mobile web the default Wikipedia experience",
+  "license": "MIT",
+  "name": "m-wikipedia",
+  "repository": "wookiehangover/m-wikipedia",
+  "author": {
+    "name": "Sam Breed",
+    "email": "samuel.breed@gmail.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "build": "mkdir -p dist && zip -r -j dist/$npm_package_name-$npm_package_version.zip . -x .git .*"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

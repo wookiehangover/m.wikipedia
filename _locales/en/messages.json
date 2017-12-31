@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "ʍ.wiki",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "Redirect all Wikipedia urls to Mobile Web",
+    "description": "The description of the application"
+  }
+}
