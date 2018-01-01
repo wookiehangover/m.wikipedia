@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Makes the mobile web the default Wikipedia experience",
   "license": "MIT",
-  "name": "m-wikipedia",
+  "name": "m.wikipedia",
   "repository": "wookiehangover/m-wikipedia",
   "author": {
     "name": "Sam Breed",

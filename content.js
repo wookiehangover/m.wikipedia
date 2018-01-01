@@ -1,8 +1,15 @@
 
 ~(function() {
   const host = location.host
-  const isMobile = /([a-z]+)\.wikipedia\.org/
-  if (isMobile.test(host)) {
-    location.host = host.replace(isMobile, '$1.m.wikipedia.org')
+  const localeRegex = /^([a-z]{2})\.wikipedia\.org$/
+  const isDesktop = localeRegex.test(host)
+  const isMobile = host.includes('.m.wikipedia.org')
+  const wantsDesktop = location.search.includes('desktop')
+
+  if (isDesktop && wantsDesktop === false){
+    location.host = host.replace(localeRegex, '$1.m.wikipedia.org')
+  } else if (isMobile && wantsDesktop) {
+    location.host = host.replace('.m.', '.')
   }
+
 })()

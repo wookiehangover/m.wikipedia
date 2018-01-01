@@ -1,10 +1,9 @@
 {
   "name": "__MSG_appName__",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "manifest_version": 2,
   "description": "__MSG_appDescription__",
   "icons": {
-    "16": "icon-16.png",
     "128": "icon-128.png"
   },
   "default_locale": "en",
@@ -15,7 +14,7 @@
     {
       "run_at": "document_start",
       "matches": [
-        "https://en.wikipedia.org/*"
+        "https://*.wikipedia.org/*"
       ],
       "js": [
         "content.js"
